@@ -64,25 +64,25 @@ function App() {
               label="Phone number, username or email" />
             <Input type="password" value={password} onChange={e => setPassword(e.target.value)} label="Password" />
             <button type="submit" disabled={!enable}
-              className="h-[30px] mt-1 rounded bg-brand font-medium text-white text-sm disabled:opacity-50">Log In
+              className="h-[30px] mt-1 rounded bg-brand font-medium text-white text-sm disabled:opacity-50">Giriş Yap
             </button>
             <div className="flex items-center my-2.5 mb-3.5">
               <div className="h-px bg-gray-300 flex-1" />
-              <span className="px-4 text-[13px] text-gray-500 font-semibold">OR</span>
+              <span className="px-4 text-[13px] text-gray-500 font-semibold">Yada</span>
               <div className="h-px bg-gray-300 flex-1" />
             </div>
             <a href="#" className="flex justify-center mb-2.5 items-center gap-x-2 text-sm font-semibold text-facebook">
               <AiFillFacebook size={20} />
-              Log in with Facebook
+              Facebook İle Giriş Yap
             </a>
             <a href="#" className="text-xs flex items-center justify-center text-link">
-              Forgot password?
+              Şifreni mi unuttun?
             </a>
           </form>
         </div>
 
         <div className="bg-white border p-4 text-sm text-center">
-          Don't have an account? <a href="#" className="font-semibold text-brand">Sign up</a>
+          Hesabın Yok Mu?    <a href="#" className="font-semibold text-brand">Üye Ol</a>
         </div>
 
       </div>
