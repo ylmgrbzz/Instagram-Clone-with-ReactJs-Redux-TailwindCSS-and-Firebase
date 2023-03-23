@@ -1,13 +1,24 @@
 import { useRef, useEffect, useState } from "react";
 import Input from "../components/Input.js";
+import { useNavigate, useLocation } from "react-router-dom"
 
 import { AiFillFacebook } from "react-icons/ai";
-
+import { useDispatch } from "react-redux";
+import { setUser } from "../store/auth.js";
 function Login() {
+
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+    const location = useLocation()
     const ref = useRef();
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const enable = username.length > 0 && password.length > 0;
+    const handleSubmit = e => {
+        e.preventDefault();
+        dispatch(setUser({ username }))
+        navigate(location.state?.return_url || '/', { replace: true })
+    }
 
     useEffect(() => {
         let images = ref.current.querySelectorAll('img'),
@@ -59,7 +70,8 @@ function Login() {
                         <img className="h-[51px]"
                             src="https://www.instagram.com/static/images/web/logged_out_wordmark-2x.png/d2529dbef8ed.png" alt="" />
                     </a>
-                    <form className="grid gap-y-1.5">
+
+                    <form onSubmit={handleSubmit} className="grid gap-y-1.5">
                         <Input type="text" value={username} onChange={e => setUsername(e.target.value)}
                             label="Phone number, username or email" />
                         <Input type="password" value={password} onChange={e => setPassword(e.target.value)} label="Password" />
