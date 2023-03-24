@@ -79,7 +79,7 @@ export default function Login() {
                                 <Input name="username" label="Phone number, username or email" />
                                 <Input type="password" name="password" label="Password" />
                                 <button type="submit"
-                                    disabled={!isValid || !dirty || isSubmitting}
+                                    disabled={!isValid || !dirty}
                                     className="h-[30px] mt-1 rounded bg-brand font-medium text-white text-sm disabled:opacity-50">
                                     Log In
                                 </button>
