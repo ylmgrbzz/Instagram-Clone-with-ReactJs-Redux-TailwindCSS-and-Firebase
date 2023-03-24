@@ -9,15 +9,27 @@ import routes from "./routes";
 import Loader from "./components/Loader";
 
 function App() {
-  const showRoutes = useRoutes(routes)
-  const user = useSelector(state => state.auth.user)
-  if (!user) {
-    return <Loader />
-  }
-  return <>
-    <Toaster position="top-right" />
-    {showRoutes} </>
+  const [redirect, setRedirect] = useState(false);
 
+  useEffect(() => {
+    let timeout = setTimeout(() => {
+      setRedirect(true);
+    }, 2000);
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
+  const showRoutes = useRoutes(routes);
+  const user = useSelector((state) => state.auth.user);
+  if (!user && !redirect) {
+    return <Loader />;
+  }
+  return (
+    <>
+      <Toaster position="top-right" />
+      {showRoutes}{" "}
+    </>
+  );
 }
 
 export default App;
