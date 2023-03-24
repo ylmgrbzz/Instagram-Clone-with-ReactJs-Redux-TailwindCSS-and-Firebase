@@ -5,6 +5,7 @@ import { useNavigate, useLocation } from "react-router-dom"
 import { AiFillFacebook } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import { setUser } from "../store/auth.js";
+import { login } from "./../firebase.js";
 function Login() {
 
     const dispatch = useDispatch()
@@ -16,8 +17,9 @@ function Login() {
     const enable = username.length > 0 && password.length > 0;
     const handleSubmit = e => {
         e.preventDefault();
-        dispatch(setUser({ username }))
-        navigate(location.state?.return_url || '/', { replace: true })
+        login(username, password);
+        // dispatch(setUser({ username }))
+        // navigate(location.state?.return_url || '/', { replace: true })
     }
 
     useEffect(() => {
