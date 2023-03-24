@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, signOut, onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import toast from "react-hot-toast";
-// import { userHandle } from "utils";
+import { userHandle } from "./utils";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAIKFVKcqxRpyJtqAMbNEklTHOCWhhBo98",
@@ -16,9 +16,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth()
 
-// onAuthStateChanged(auth, user => {
-//     userHandle(user || false)
-// })
+onAuthStateChanged(auth, user => {
+    userHandle(user || false)
+})
 
 export const login = async (email, password) => {
     try {

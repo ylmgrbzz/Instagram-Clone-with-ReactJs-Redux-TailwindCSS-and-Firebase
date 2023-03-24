@@ -8,7 +8,7 @@ import { setUser } from "../store/auth.js";
 import { login } from "./../firebase.js";
 function Login() {
 
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
     const navigate = useNavigate()
     const location = useLocation()
     const ref = useRef();
