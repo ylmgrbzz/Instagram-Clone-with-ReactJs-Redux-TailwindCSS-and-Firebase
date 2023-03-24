@@ -19,7 +19,7 @@ function Login() {
         e.preventDefault();
         login(username, password);
         // dispatch(setUser({ username }))
-        // navigate(location.state?.return_url || '/', { replace: true })
+        navigate(location.state?.return_url || '/', { replace: true })
     }
 
     useEffect(() => {
