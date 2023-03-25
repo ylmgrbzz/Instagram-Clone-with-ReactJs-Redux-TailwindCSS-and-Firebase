@@ -71,6 +71,10 @@ export const register = async ({ email, password, full_name, username }) => {
                     followers: [],
                     following: [],
                     notifications: [],
+                    website: '',
+                    bio: '',
+                    phoneNumber: '',
+                    gender: '',
                 });
 
                 await updateProfile(auth.currentUser, {
