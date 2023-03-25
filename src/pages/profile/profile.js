@@ -1,11 +1,12 @@
 import { useParams, useNavigate, NavLink, Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getUserInfo } from "firebase.js";
+import { getUserInfo } from "../../firebase";
 import Header from "./components/header";
-import Icon from "components/Icon";
 import classNames from "classnames";
-import ProfileNotFound from "pages/profile/not-found";
 import { Helmet } from "react-helmet";
+import ProfileNotFound from "./not-found";
+import Icon from "../../components/Icon";
+
 
 export default function ProfileLayout() {
 
@@ -48,6 +49,7 @@ export default function ProfileLayout() {
                     "text-[#8e8e8e] border-transparent": !isActive,
                     "text-black border-black": isActive
                 })}>
+                    {/* <Icon name="post" size={12} /> */}
                     <Icon name="post" size={12} />
                     POSTS
                 </NavLink>

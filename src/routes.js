@@ -3,7 +3,11 @@ import MainLayout from './pages/layout'
 import Register from './pages/register'
 import Home from './pages/home'
 import AuthLayout from './pages/auth'
+import Logout from './pages/logout'
 import PrivateRoute from "./components/PrivateRoute";
+import ProfileLayout from './pages/profile/profile'
+import ProfilePosts from './pages/profile/profile'
+import ProfileTagged from './pages/profile/profile'
 
 
 const routes = [
@@ -16,24 +20,24 @@ const routes = [
                 index: true,
                 element: <Home />
             },
-            // {
-            //     path: 'logout',
-            //     element: <Logout />
-            // },
-            // {
-            //     path: ':username',
-            //     element: <ProfileLayout />,
-            //     children: [
-            //         {
-            //             index: true,
-            //             element: <ProfilePosts />
-            //         },
-            //         {
-            //             path: 'tagged',
-            //             element: <ProfileTagged />
-            //         }
-            //     ]
-            // },
+            {
+                path: 'logout',
+                element: <Logout />
+            },
+            {
+                path: ':username',
+                element: <ProfileLayout />,
+                children: [
+                    {
+                        index: true,
+                        element: <ProfilePosts />
+                    },
+                    {
+                        path: 'tagged',
+                        element: <ProfileTagged />
+                    }
+                ]
+            },
             // {
             //     path: 'inbox',
             //     element: <InboxLayout />,
