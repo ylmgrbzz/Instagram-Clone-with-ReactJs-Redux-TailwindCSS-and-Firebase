@@ -1,5 +1,5 @@
 import Icon from "components/Icon";
-import {useState} from "react";
+import { useState } from "react";
 import TextareaAutosize from 'react-textarea-autosize';
 
 export default function Reply({ setMessages }) {
@@ -13,9 +13,9 @@ export default function Reply({ setMessages }) {
 			{
 				from: {
 					id: 'PViTN3T52Kha9N92YX7LkjTvKz63',
-					name: 'Tayfun Erbilen',
-					username: 'tayfunerbilen',
-					avatar: 'https://pbs.twimg.com/profile_images/1526647892726915073/tN9rYw3V_400x400.jpg'
+					name: 'YalımGürbüz',
+					username: 'YalımGürbüz',
+					avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 				},
 				message
 			},
