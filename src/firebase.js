@@ -2,42 +2,91 @@ import { initializeApp } from "firebase/app";
 import {
     getAuth,
     signOut,
+    createUserWithEmailAndPassword,
     onAuthStateChanged,
     signInWithEmailAndPassword,
+    updateProfile,
 } from "firebase/auth";
 import toast from "react-hot-toast";
 import { userHandle } from "./utils";
+import { doc, getDoc, getFirestore, setDoc } from "firebase/firestore"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAIKFVKcqxRpyJtqAMbNEklTHOCWhhBo98",
-    authDomain: "instagram-f169b.firebaseapp.com",
-    projectId: "instagram-f169b",
-    storageBucket: "instagram-f169b.appspot.com",
-    messagingSenderId: "683232795331",
-    appId: "1:683232795331:web:cd57cdb99f4f418e926076",
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth();
+const auth = getAuth()
+const db = getFirestore(app)
 
-onAuthStateChanged(auth, (user) => {
-    userHandle(user || false);
-});
+onAuthStateChanged(auth, async user => {
+    if (user) {
+        const dbUser = await getDoc(doc(db, "users", user.uid))
+        let data = {
+            uid: user.uid,
+            fullName: user.displayName,
+            email: user.email,
+            emailVerified: user.emailVerified,
+            ...dbUser.data()
+        }
+        userHandle(data)
+    } else {
+        userHandle(false)
+    }
+})
 
 export const login = async (email, password) => {
     try {
-        const response = await signInWithEmailAndPassword(auth, email, password);
-        console.log(response.user, response.password);
+        return await signInWithEmailAndPassword(auth, email, password)
     } catch (err) {
-        toast.error(err.code);
+        toast.error(err.code)
     }
-};
+}
+
+export const register = async ({ email, password, full_name, username }) => {
+    try {
+        const user = await getDoc(doc(db, "usernames", username))
+        if (user.exists()) {
+            toast.error(`${username} kullanıcı adı başkası tarafından kullanılıyor.`)
+        } else {
+            const response = await createUserWithEmailAndPassword(auth, email, password)
+            if (response.user) {
+
+                await setDoc(doc(db, "usernames", username), {
+                    user_id: response.user.uid
+                })
+
+                await setDoc(doc(db, "users", response.user.uid), {
+                    fullName: full_name,
+                    username: username,
+                    followers: [],
+                    following: [],
+                    notifications: []
+                })
+
+                await updateProfile(auth.currentUser, {
+                    displayName: full_name
+                })
+
+                return response.user
+
+            }
+        }
+    } catch (err) {
+        toast.error(err.code)
+    }
+}
 
 export const logout = async () => {
     try {
-        await signOut(auth);
+        await signOut(auth)
     } catch (err) {
-        toast.error(err.code);
+        toast.error(err.code)
     }
-};
+}
