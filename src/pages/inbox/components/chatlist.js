@@ -1,9 +1,9 @@
-import {NavLink, useParams} from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import classNames from "classnames";
 
 export default function ChatList() {
 
-	const {conversationId} = useParams()
+	const { conversationId } = useParams()
 	const chats = [
 		{
 			id: 1,
@@ -16,7 +16,7 @@ export default function ChatList() {
 		{
 			id: 2,
 			user: {
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg',
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F',
 				name: 'Gökhan Kandemir'
 			},
 			unread: true,
@@ -48,7 +48,7 @@ export default function ChatList() {
 					key={chat.id}
 					to={`/inbox/${chat.id}`}
 				>
-					<img src={chat.user.avatar} className="w-14 h-14 rounded-full" alt=""/>
+					<img src={chat.user.avatar} className="w-14 h-14 rounded-full" alt="" />
 					<div>
 						<h6 className="text-sm">{chat.user.name}</h6>
 						<p className={`text-sm ${!chat?.unread && 'text-[#8e8e8e]'}`}>

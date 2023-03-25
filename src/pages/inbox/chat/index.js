@@ -25,7 +25,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
@@ -34,7 +34,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
@@ -43,7 +43,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
@@ -52,7 +52,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
@@ -61,7 +61,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
@@ -70,7 +70,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
@@ -79,7 +79,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
@@ -88,7 +88,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
@@ -97,7 +97,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
@@ -106,7 +106,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
@@ -115,7 +115,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
@@ -124,7 +124,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
@@ -133,7 +133,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
@@ -142,7 +142,7 @@ export default function Chat() {
 				id: 'H7UmMJXPGRMYWq4M58iDwYbGSHe2',
 				name: 'YalımGürbüz',
 				username: 'YalımGürbüz',
-				avatar: 'https://pbs.twimg.com/profile_images/1064886121870561280/1Z8pZjhG_400x400.jpg'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F'
 			},
 			message: 'YalımGürbüz'
 		},
