@@ -5,10 +5,11 @@ export default function PrivateRoute({ children }) {
     const user = useSelector((state) => state.auth.user);
     const location = useLocation();
 
-    if (!user) {
+    if (user) {
         return (
             <Navigate
-                to="/auth/login"
+                // to="/auth/login"
+                to="/"
                 replace={true}
                 state={{ return_url: location.pathname }}
             />
