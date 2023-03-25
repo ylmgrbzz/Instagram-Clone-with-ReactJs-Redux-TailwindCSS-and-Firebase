@@ -8,27 +8,27 @@ export default function ChatList() {
 		{
 			id: 1,
 			user: {
-				avatar: 'https://pbs.twimg.com/profile_images/1526647892726915073/tN9rYw3V_400x400.jpg',
-				name: 'Tayfun Erbilen'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F',
+				name: 'Yalım Gürbüz'
 			},
-			lastMessage: 'Selam tayfun!'
+			lastMessage: 'Selam Yalım Gürbüz!'
 		},
 		{
 			id: 2,
 			user: {
 				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F',
-				name: 'Gökhan Kandemir'
+				name: 'Yalım Gürbüz'
 			},
 			unread: true,
-			lastMessage: 'yeni video attım, baktın mı?'
+			lastMessage: 'Yalım Gürbüz?'
 		},
 		{
 			id: 3,
 			user: {
-				avatar: 'https://pbs.twimg.com/profile_images/1526647892726915073/tN9rYw3V_400x400.jpg',
-				name: 'Tayfun Erbilen'
+				avatar: 'https://pps.whatsapp.net/v/t61.24694-24/321350126_1615166852266811_6208785799584419506_n.jpg?ccb=11-4&oh=01_AdSQqsvoMRBy0ShYiugIOHyFR2VD_ZXS9LQbZDTwM1b0Pw&oe=642BC77F',
+				name: 'Yalım Gürbüz'
 			},
-			lastMessage: 'Selam tayfun!'
+			lastMessage: 'Yalım Gürbüz!'
 		}
 	]
 
