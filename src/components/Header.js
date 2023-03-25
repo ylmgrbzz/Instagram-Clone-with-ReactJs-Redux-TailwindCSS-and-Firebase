@@ -1,10 +1,17 @@
-import { Link } from "react-router-dom";
 import Search from "../components/Search";
 import { logout } from "./../firebase.js";
+import { Link, NavLink } from "react-router-dom";
+import Icon from "../components/Icon";
+import classNames from "classnames";
+import { useSelector } from "react-redux";
+
 
 export default function Header() {
+    const user = useSelector(state => state.auth.user)
+
     return (
-        <header className="bg-white border-b border-gray-300">
+
+        <header className="bg-white border-b border-gray-300" >
             <div className="flex items-center justify-between h-[60px] container mx-auto">
 
                 <Link to="/">
@@ -14,8 +21,28 @@ export default function Header() {
 
                 <Search />
 
-                <nav>
-                    <button onClick={logout}>Logout</button>
+                <nav className="flex items-center gap-x-5">
+                    <NavLink to="/">
+                        {({ isActive }) => <Icon name={isActive ? 'home-filled' : 'home'} size={24} />}
+                    </NavLink>
+                    <NavLink to="/inbox">
+                        {({ isActive }) => <Icon name={isActive ? 'direct-filled' : 'direct'} size={24} />}
+                    </NavLink>
+                    <NavLink to="/">
+                        <Icon name="new" size={24} />
+                    </NavLink>
+                    <NavLink to="/">
+                        <Icon name="explore" size={24} />
+                    </NavLink>
+                    <NavLink to="/">
+                        <Icon name="heart" size={24} />
+                    </NavLink>
+                    <NavLink to={`/${user.username}`}>
+                        {({ isActive }) => <img src="/no-avatar.jpeg" alt="" className={classNames({
+                            "w-6 h-6 rounded-full": true,
+                            "ring-1 ring-offset-1	ring-black": isActive
+                        })} />}
+                    </NavLink>
                 </nav>
 
             </div>
