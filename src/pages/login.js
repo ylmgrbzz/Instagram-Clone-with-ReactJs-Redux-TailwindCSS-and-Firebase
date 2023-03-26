@@ -4,12 +4,9 @@ import { Navigate, useLocation, Link } from "react-router-dom";
 import Button from "./../components/Button";
 import Separator from "./../components/Separator";
 import { AiFillFacebook } from "react-icons/ai";
-import { useDispatch } from "react-redux";
-import { setUser } from "../store/auth.js";
 import { login } from "./../firebase.js";
 import { Formik, Form } from "formik";
 import { LoginSchema } from "./../validation/login-schema.js";
-import { toast } from "react-hot-toast";
 import { useSelector } from "react-redux";
 
 export default function Login() {

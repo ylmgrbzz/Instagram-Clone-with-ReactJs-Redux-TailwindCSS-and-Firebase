@@ -11,5 +11,5 @@ export default function Header({ user }) {
 				<Icon name="info" size={24} />
 			</button>
 		</header>
-	)
+	);
 }
