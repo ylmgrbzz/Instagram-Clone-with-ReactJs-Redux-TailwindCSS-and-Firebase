@@ -1,6 +1,6 @@
-import Icon from "components/Icon";
-import {useSelector} from "react-redux";
-import ChatList from "pages/inbox/components/chatlist";
+import Icon from "../../../components/Icon";
+import { useSelector } from "react-redux";
+import ChatList from "./chatlist";
 
 export default function Sidebar() {
 

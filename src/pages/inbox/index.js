@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Sidebar from "pages/inbox/components/sidebar";
+import Sidebar from "../../pages/inbox/components/sidebar";
 
 export default function InboxLayout() {
 	return (

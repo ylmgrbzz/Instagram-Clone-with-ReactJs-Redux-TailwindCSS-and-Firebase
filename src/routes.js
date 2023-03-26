@@ -8,6 +8,9 @@ import PrivateRoute from "./components/PrivateRoute";
 import ProfileLayout from './pages/profile/profile'
 import ProfilePosts from './pages/profile/profile'
 import ProfileTagged from './pages/profile/profile'
+import Chat from './pages/inbox/chat'
+import Inbox from './pages/inbox/inbox'
+import InboxLayout from './pages/inbox'
 
 
 const routes = [
@@ -38,20 +41,20 @@ const routes = [
                     }
                 ]
             },
-            // {
-            //     path: 'inbox',
-            //     element: <InboxLayout />,
-            //     children: [
-            //         {
-            //             index: true,
-            //             element: <Inbox />
-            //         },
-            //         {
-            //             path: ':conversationId',
-            //             element: <Chat />
-            //         }
-            //     ]
-            // }
+            {
+                path: 'inbox',
+                element: <InboxLayout />,
+                children: [
+                    {
+                        index: true,
+                        element: <Inbox />
+                    },
+                    {
+                        path: ':conversationId',
+                        element: <Chat />
+                    }
+                ]
+            }
         ]
     },
     {
